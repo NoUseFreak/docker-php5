@@ -14,6 +14,7 @@ RUN apt-get update \
 	    nginx \
 	    php5-fpm \
 	    php5-cli \
+	    php5-mysql \
 	&& apt-get clean
 
 COPY conf/init.nginx.conf /etc/init/nginx.conf
